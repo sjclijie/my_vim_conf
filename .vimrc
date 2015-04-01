@@ -33,6 +33,10 @@ set showmatch
 set autoread
 "帮助文件设置为中文
 set helplang=cn
+"记住上次编辑的位置
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+"退格键
+set backspace=indent,eol,start
 
 " ==========================   配色方案  ========================= 
 "开启语法高亮功能
@@ -144,7 +148,6 @@ endif
     let tagbar_width=32 
     " tagbar 子窗口中不显示冗余帮助信息 
     let g:tagbar_compact=1
-
 " }
 
 " MiniBuffExplorer配置{
@@ -153,6 +156,16 @@ endif
     " buffer切换快捷键
     map <Leader>bn :MBEbn<CR>
     map <Leader>bp :MBEbp<CR>
+" }
+
+" autopop 配置 {
+    autocmd FileType php setlocal dict+=~/.vim/bundle/AutoComplPop/php_funclist.txt
+
+    if !exists('g:AutoComplPop_Behavior')
+        let g:AutoComplPop_Behavior = {}
+        let g:AutoComplPop_Behavior['php'] = []
+        call add(g:AutoComplPop_Behavior['php'],{'command':'','pattern':printf('(->|::|$)k{%d,}$', 0),'repeat' :0})
+    endif
 " }
 
 " bundle 配置 {
