@@ -9,15 +9,15 @@
 
 集成插件:
 
-    - NERDTree         快捷键\<F3\>
+    - NERDTree         快捷键<F3>
 
-    - TarBar           快捷键\<F4\>
+    - TarBar           快捷键<F4>
 
-    - miniBufExpl      快捷键\<F5\>
+    - miniBufExpl      快捷键<F5>
 
-    - EasyMotion       \<leader\>\<leader\>f
+    - EasyMotion       <leader><leader>f
 
-    - NERDCommenter    \<leader\>cc 注释, \<leader\>cu 取消注释
+    - NERDCommenter    <leader>cc 注释, <leader>cu 取消注释
 
     - VisIncr
 
