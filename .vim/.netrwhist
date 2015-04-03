@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Jaylee/sjclijie.github.io/source/_includes/custom'
+let g:netrw_dirhist_2='/Users/Jaylee/sjclijie.github.io/source/_includes/asides'
+let g:netrw_dirhist_3='/Users/Jaylee/sjclijie.github.io/source'
+let g:netrw_dirhist_4='/Users/Jaylee/sjclijie.github.io/source/_includes/custom'
+let g:netrw_dirhist_5='/Users/Jaylee/gitTest'
